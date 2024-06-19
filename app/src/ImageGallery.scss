@@ -1,0 +1,56 @@
+@import 'colors'; // Ensure you import your variables if using them
+
+// Custom styles for the ImageGallery component
+.background {
+    background: linear-gradient(180deg, $gradient-color-1, $gradient-color-2);
+    color: $text-color;
+    padding: 20px 0 20px 0;
+}
+
+.gallery-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.carousel-slider .control-arrow {
+    border: 0   !important;
+    color: $accent-color !important; // Arrow color
+    font-size: 2rem !important;
+    
+}
+// Override carousel styles
+
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid $accent-color !important;
+}
+.carousel {
+    .carousel-slider .control-arrow {
+        border: 0   !important;
+        color: $accent-color !important; // Arrow color
+        font-size: 2rem !important;
+        
+    }
+
+    .control-arrow:hover {
+        color: $accent-color; // Arrow hover color
+    }
+
+    .control-dots .dot {
+        background: $primary-color; // Dot color
+    }
+
+    .control-dots .dot.selected, 
+    .control-dots .dot:hover {
+        background: $accent-color !important; // Selected and hover dot color
+    }
+
+    .legend {
+        background: $secondary-color !important; // Legend background color
+        color: $text-color; // Legend text color
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+}

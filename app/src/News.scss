@@ -1,0 +1,11 @@
+@import 'colors';
+.hero-body .title {
+    color: $primary-color !important;
+    font-size: 5em !important;
+}
+.card {
+    box-shadow: none;
+}
+.card .title {
+    color: $secondary-color !important;
+}

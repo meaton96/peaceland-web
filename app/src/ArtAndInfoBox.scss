@@ -1,0 +1,28 @@
+@import 'colors';
+.box-left {
+    transform: translateX(-20px); /* Nudge the box to the left when the image is on the right */
+    z-index: 2;
+    position: relative; /* Ensure z-index works */
+}
+
+.box-right {
+    transform: translateX(20px); /* Nudge the box to the right when the image is on the left */
+    z-index: 2;
+    position: relative; /* Ensure z-index works */
+}
+
+.image-left {
+    transform: translateX(-20px); /* Nudge the image to the left when the image is on the right */
+}
+
+.image-right {
+    transform: translateX(20px); /* Nudge the image to the right when the image is on the left */
+}
+#art-title {
+    color: white !important;
+}
+@media (max-width: 700px) {
+    .box-left, .box-right, .image-left, .image-right {
+        transform: translateX(0); 
+    }
+}

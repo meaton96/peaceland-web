@@ -1,0 +1,78 @@
+@import 'colors';
+
+.section h1.title {
+    color: $primary-color !important;
+    font-size: 5em !important;
+}
+.section h2.title {
+    color: $secondary-color !important;
+}
+.column .title h3 {
+    color: $text-color !important;
+}
+.project-director {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.project-director .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-director .column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-director .column.has-text-left {
+    text-align: left;
+}
+
+/* Centering the cards in their respective rows */
+.section.columns.is-multiline {
+    justify-content: center;
+}
+
+/* Left aligning the text description on the card */
+.team-card .card-content .content {
+    text-align: left;
+}
+
+/* Changing cursor on hover over section titles */
+.section-title {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding-right: 20px; /* Space for the arrow */
+}
+
+/* Arrow indicator for collapsed/expanded state */
+.section-title::after {
+    content: '▼'; /* Down arrow */
+    position: absolute;
+    right: -1em;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+}
+
+.section-title.collapsed::after {
+    transform: translateY(-50%) rotate(-90deg); /* Rotate arrow to point to the right */
+}
+
+@media screen and (max-width: 1200px) {
+    .section h1.title {
+        font-size: 3.5em !important;
+    }
+    .title {
+        font-size: 3em !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+        font-size: 2em !important;
+    }
+}

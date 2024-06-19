@@ -1,0 +1,54 @@
+@import 'colors';
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text img {
+    margin-right: 20px;
+}
+
+.logo-text p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.footer-background {
+    background-color: $gradient-color-2 !important;
+    color: $text-color;
+    padding: 20px;
+    margin-top: 0   !important;
+
+}
+
+@media (max-width: 700px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-text {
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,101 @@
+
+@import 'colors';
+
+
+.navbar {
+    --bulma-navbar-h: 209 !important; // Based on secondary color
+    --bulma-navbar-s: 55% !important;
+    --bulma-navbar-l: 36% !important; // Calculated from secondary color
+    --bulma-navbar-background-color: $primary-color !important;
+    --bulma-navbar-box-shadow-size: 0 0.125em 0 0 !important;
+    --bulma-navbar-box-shadow-color: $background-color !important;
+    --bulma-navbar-padding-vertical: 1rem !important;
+    --bulma-navbar-padding-horizontal: 2rem !important;
+    --bulma-navbar-z: 30 !important;
+    --bulma-navbar-fixed-z: 30 !important;
+    --bulma-navbar-item-background-a: 0 !important;
+    --bulma-navbar-item-background-l: 36% !important; // Calculated from secondary color
+    --bulma-navbar-item-background-l-delta: 0% !important;
+    --bulma-navbar-item-hover-background-l-delta: 10% !important; // Lighter on hover
+    --bulma-navbar-item-active-background-l-delta: -10% !important; // Darker on active
+    --bulma-navbar-item-color-l: 100% !important; // White text
+    --bulma-navbar-item-selected-h: 42 !important; // Based on accent color
+    --bulma-navbar-item-selected-s: 68% !important;
+    --bulma-navbar-item-selected-l: 52% !important; // Calculated from accent color
+    --bulma-navbar-item-selected-background-l: 52% !important; // Accent
+    --bulma-navbar-item-selected-color-l: 100% !important; // White text
+    --bulma-navbar-item-img-max-height: 1.75rem !important;
+    --bulma-navbar-burger-color: $text-color !important;
+    --bulma-navbar-tab-hover-background-color: transparent !important;
+    --bulma-navbar-tab-hover-border-bottom-color: $accent-color !important;
+    --bulma-navbar-tab-active-color: $accent-color !important;
+    --bulma-navbar-tab-active-background-color: transparent !important;
+    --bulma-navbar-tab-active-border-bottom-color: $accent-color !important;
+    --bulma-navbar-tab-active-border-bottom-style: solid !important;
+    --bulma-navbar-tab-active-border-bottom-width: 0.1875em !important;
+    --bulma-navbar-dropdown-background-color: $primary-color !important;
+    --bulma-navbar-dropdown-border-l: 80% !important;
+    --bulma-navbar-dropdown-border-color: hsl(209, 55%, 80%) !important;
+    --bulma-navbar-dropdown-border-style: solid !important;
+    --bulma-navbar-dropdown-border-width: 0.125em !important;
+    --bulma-navbar-dropdown-offset: -0.25em !important;
+    --bulma-navbar-dropdown-arrow: $accent-color !important;
+    --bulma-navbar-dropdown-radius: var(--bulma-radius-large) !important;
+    --bulma-navbar-dropdown-z: 20 !important;
+    --bulma-navbar-dropdown-boxed-radius: var(--bulma-radius-large) !important;
+    --bulma-navbar-dropdown-boxed-shadow: 0 0.5em 0.5em hsla(209, 55%, 10%, 0.1), 0 0 0 1px hsla(209, 55%, 10%, 0.1) !important;
+    --bulma-navbar-dropdown-item-h: 209 !important;
+    --bulma-navbar-dropdown-item-s: 55% !important;
+    --bulma-navbar-dropdown-item-l: 36% !important; // secondary
+    --bulma-navbar-dropdown-item-background-l: 36% !important; // secondary
+    --bulma-navbar-dropdown-item-color-l: 100% !important; // white
+    --bulma-navbar-divider-background-l: 82% !important;
+    --bulma-navbar-divider-height: 0.125em !important;
+    --bulma-navbar-bottom-box-shadow-size: 0 -0.125em 0 0 !important;
+    background-color: $primary-color !important;
+    min-height: var(--bulma-navbar-height) !important;
+    position: relative !important;
+    z-index: var(--bulma-navbar-z) !important;
+}
+
+.navbar-item {
+    color: #fff!important;
+}
+
+.navbar-item:hover,
+.navbar-item.is-active {
+    background-color: $accent-color !important;
+    color: $text-color !important;
+}
+.navbar-item.is-active {
+    background-color: $accent-color !important;
+    color: $text-color !important;
+}
+
+.navbar-item:focus,
+.navbar-item.is-active:focus {
+    background-color: $accent-color !important;
+    color: $text-color !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.navbar-burger {
+    color: #fff!important;
+}
+
+.navbar-dropdown {
+    background-color: $primary-color !important;
+    border-color: $background-color !important;
+}
+
+.navbar-dropdown .navbar-item {
+    color: #fff !important;
+}
+
+.navbar-dropdown .navbar-item:hover,
+.navbar-dropdown .navbar-item.is-active {
+    background-color: $accent-color !important;
+    color: #fff !important;
+}
